@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                   CAT MARKETPLACE USING CATAPI
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-# Application which connects to thecatapi.com in order to retrieve information on a specific breed of cat
+# Application which connects to thecatapi.com in order to retrieve information on a specific breed of cat, stores data on a MYSQL database
 
 IMPLEMETED:
 all functions within application.py
