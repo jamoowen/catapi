@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Cats!{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="/static/img/cat.png" alt="" width="60" >
+            </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      {% block body %}
+
+    
+      <div class="container">
+        <h1>Hello!</h1>
+        <p>This app was made using thecatapi.com</p>
+        <p>Sign up for an account, which comes with £1000 credit to use to purchase a cat.</p>
+        <p>Otherwise, login and start buying!</p>
+        <p>Select a breed to view available cats</p>
+        <select class="form-select"  name="breed" id="cars" form="catform">
+            <option selected value="">Select Breed</option>
+            <option value="beng">Bengal</option>
+            <option value="abob">American Bobtail</option>
+            <option value="asho">American Shorthair</option>
+            <option value="char">Chartreux</option>
+            <option value="pers">Persian</option>
+            <option value="siam">Siamese</option>
+            <option value="sphy">Sphynx</option>
+          </select>
+        <form action="/" method="post" id="catform">
+            <input type="submit" value="search">
+        </form>
+       
+      </div>
+
+
+      {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

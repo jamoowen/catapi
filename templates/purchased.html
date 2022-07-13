@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block title %}Purchased{% endblock %}
+{% block body %}
+    <h2>Congratulations, you successfully purchased a {{cat_name}}</h2>
+    <h3>It will be delivered to you in 1 hour</h3>
+    <h3>Account Balance: £{{balance}}</h3>
+    {{sorry}}
+
+{% endblock %}

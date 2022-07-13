@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block title %}Buy{% endblock %}
+{% block body %}
+<div class="container">
+    <p>Type: {{cat['breeds'][0]['name']}}</p>
+    <p>price: £{{price}}</p>
+    <p>Temperament: {{cat['breeds'][0]['temperament']}}</p>
+    <form action="/buy" method="post">
+        <input type="submit" value="Buy">
+        <input type="hidden" value="{{cat_name}}" name="cat_name">
+        <input type="hidden" value="{{price}}" name="cat_price">     
+    </form>
+    <br>
+    <img src="{{cat_url}}" height="300px"> 
+    
+</div>
+
+{% endblock %}
