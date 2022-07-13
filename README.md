@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
                                                   CAT MARKETPLACE USING CATAPI
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-# application which connects to thecatapi.com in order to retrieve information on a specific breed of cat
+# Application which connects to thecatapi.com in order to retrieve information on a specific breed of cat
 
 IMPLEMETED:
 all functions within application.py
@@ -13,4 +13,5 @@ all functions within application.py
 * sets a random price to the given cat
 * allows a user to purchase the given cat
 * updates the users account within a created database
+* open cats.png to view screenshots of the application in action
 
