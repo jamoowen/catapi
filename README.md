@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                  CAT MARKETPLACE USING CATAPI
+                                          CAT MARKETPLACE USING CATAPI
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 # Application which connects to thecatapi.com in order to retrieve information on a specific breed of cat, stores data on a MYSQL database
 
